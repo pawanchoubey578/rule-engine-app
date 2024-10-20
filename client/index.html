@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rule Engine</h1>
+        
+        <div class="input-section">
+            <textarea id="ruleInput" placeholder="Enter your rule here..."></textarea>
+            <button id="createRuleBtn">Create Rule</button>
+        </div>
+
+        <div class="output-section">
+            <h2>AST Representation</h2>
+            <pre id="astOutput"></pre>
+        </div>
+
+        <div class="evaluation-section">
+            <h2>Evaluate Rule</h2>
+            <input id="contextInput" type="text" placeholder='{"age": 32, "department": "Sales", "salary": 60000, "experience": 6}' />
+            <button id="evaluateRuleBtn">Evaluate</button>
+            <p id="evaluationResult"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
